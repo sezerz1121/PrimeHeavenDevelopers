@@ -1,0 +1,783 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: "Schibsted Grotesk", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+
+.NavbarParentDiv
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.NavbarInnerDiv
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.NavMobLogo
+{
+  display: none;
+}
+.NavbarLogoDiv
+{
+  display: flex;
+  align-items: center;
+  margin-left: 3.75%;
+}
+.NavbarLinksDiv
+{
+  width: 32%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+.NavbarLinks
+{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #232323;
+  text-decoration: none;
+  cursor: pointer;
+  
+
+}
+.NavbarContactDiv
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #232323;
+  margin-right: 3.75%;
+  width: 210px;
+  height: 60px;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 1s;
+}
+.NavbarContactDiv:hover
+{
+   background-color: #929292;
+}
+.NavbarContactDivText
+{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  
+}
+.MobileNavbarMenuIcon
+{
+  display: none;
+
+}
+
+.SearchAreaParentDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 100dvh;
+  background-image: url("../Images/backgroundImage.png");
+  background-size: cover;
+  background-position: center;
+}
+.SearchButon
+{
+  display: none;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Increased the width */
+  margin-bottom: 6%;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: transparent;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  outline: none;
+  border: none;
+}
+
+.bar {
+  height: 42px;
+  width: 2px;
+  background-color: #AEADA9;
+  margin: 0 24px;
+}
+
+.dropdown {
+  flex: 2;
+  margin-right: 10px;
+}
+
+.search-button {
+  background-color: #232323;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-button:hover {
+  background-color: #444;
+}
+
+.projectsParentDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100dvh;
+  background-color: #fff;
+  margin-top: 10vh; 
+
+}
+.projectsTitleDiv
+{
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.projectsTitle
+{
+  font-size: 4rem;
+  font-weight: 500;
+  color: #232323;
+  margin-right: 2%;
+}
+.projectsAll
+{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #232323;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #AEADA9;
+  height: 56px;
+  width: 158px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projectspPropertyParentDiv
+{
+  display: flex;
+  width: 100%;
+}
+.PropertiesList
+{
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  width: 100%;
+}
+.PropertiesCard
+{
+  display: flex;
+  flex-direction: column;
+  width: 382px;
+  height: 561px;
+  background-color: #fff;
+  margin-top: 5%;
+}
+.PropertiesCardImage img
+{
+  border-radius: 16px;
+  width: 382px;
+  height: 300px;
+}
+.PropertiesCardTitle
+{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #232323;
+  margin-top: 5%;
+}
+.PropertiesCardInfo
+{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #232323;
+  margin-top: 2%;
+}
+.PropertiesCardPrice
+{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #232323;
+  margin-top: 2%;
+}
+.PropertiesCardButtonDiv
+{
+  display: flex;
+  margin-top: 5%;
+}
+.PropertiesCardButton
+{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #232323;
+  border-radius: 12px;
+  width: 325px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.projectsMobileDiv
+{
+  display: none;
+}
+.projectspPropertyParentDiv
+{
+  display: flex;
+  align-items: center;
+}
+
+.TestimonialCard
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 382px;
+  height: 561px;
+  background-color: #fff;
+  margin-top: 5%;
+  box-shadow: 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+.TestimonialCardImageDiv
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.TestimonialCardNameDiv
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  font-size: 32px;
+  font-weight: 500;
+}
+.TestimonialCardJobDiv
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #AEADA9;
+}
+.TestimonialCardReviewDiv
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #AEADA9;
+}
+.TestimonialCardStars
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5%;
+  width: 53%;
+  font-size: 20px;
+
+}
+.TestimonialMobileParentDiv
+{
+  display: none;
+}
+.FooterParentDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 1vh;
+  height: 40dvh;
+}
+.FooterHeading
+{
+  font-size: 3rem;
+  font-weight: 500;
+  color: #232323;
+  margin-top: 5%;
+}
+.FooterHeading span
+{
+  font-family:"Schibsted Grotesk", serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #232323;
+  margin-top: 5%;
+}
+.FooterBottom
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+.FooterBottomText
+{
+  display:flex ;
+  width: 30%;
+  justify-content: space-around;
+}
+.FooterBottomTextTitle
+{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #232323;
+}
+.FooterBottomTextPages
+{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #AEADA9;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 600px) {
+ body
+ {
+    margin: 0;
+    padding: 0;
+    font-family: "Schibsted Grotesk", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #fff;
+    overflow-x: hidden;
+ }
+  .NavbarParentDiv
+  {
+   
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.NavLogo
+{display: none;
+}
+.NavMobLogo
+{display: block;
+  width: 100%;
+}
+.NavbarLinks
+{display: none;}
+.NavbarContactDiv
+{display: none;}
+  .MobileNavbarMenuIcon
+{
+display: block;
+}
+.MobileNavbarMenuIcon
+{
+  margin-right: 4.4%;
+}
+.Navburger
+{
+  font-size: 1.5rem;
+  
+}
+.MobileNavbarLinksDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  position: absolute;
+  top: 64px; 
+  width: 100%;
+  height: 25dvh;
+  z-index: 999;
+}
+.MobileNavbarLinks {
+  font-size: 18px;
+  font-weight: 600;
+  color: #232323;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+.MobileNavbarLinks:hover {
+  background-color: #f0f0f0;
+}
+.SearchAreaParentDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100dvw;
+  height: 40dvh;
+  background-size: cover;
+  background-position: center;
+}
+.SearchButon
+{
+  position: relative;
+  bottom: -10%;
+  display: flex;
+  width: 70%;
+  background-color: #fff;
+  height: 56px;
+  justify-content: start;
+  padding-left: 28px;
+  align-items: center;
+  border-radius: 12px;
+  color: #232323;
+  font-size: 1rem;
+  border: 1px solid #AEADA9;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.searchIconMob
+{
+  font-size: 1.25rem;
+  color: #AEADA9;
+  margin-right: 1rem;
+}
+.search-bar {
+  display: none;
+}
+
+.projectsParentDiv {
+  display: none;
+}
+
+.projectsMobileDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 15dvh; 
+}
+.projectsMobileTitle
+{
+
+  font-size: 2rem;
+  font-weight: 400;
+  color: #232323;
+  width: 90%;
+  display: flex;
+  align-self: center;
+  justify-content: start;
+}
+.projectsMobilePropertyList {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90dvw;
+  margin-left: 10dvw;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  -webkit-overflow-scrolling: touch; /* Improves scrolling on touch devices */
+}
+
+.projectsMobilePropertyList::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in WebKit browsers */
+}
+
+.projectsMobilePropertyList {
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+.PropertiesCard
+{
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 232px;
+  background-color: #fff;
+  margin-right:  2%;
+  
+}
+.PropertiesCardImage img
+{
+  border-radius: 12px;
+  width: 160px;
+  height: 160px;
+}
+.PropertiesCardTitle
+{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #232323;
+  margin-top: 8px;
+}
+.PropertiesCardInfo {
+  font-size: 0.75rem; /* Small, readable font size */
+  font-weight: 400; /* Normal font weight */
+  color: #AEADA9; /* Subtle color for the text */
+  margin-top: 2%; /* Top margin as percentage */
+  height: 42px; /* Fixed height to ensure consistent layout */
+  overflow: hidden; /* Ensures overflow text is hidden */
+  text-overflow: ellipsis; /* Adds ellipsis for truncated text */
+  display: -webkit-box; /* Enables flex container for WebKit browsers */
+  -webkit-line-clamp: 2; /* Limits text to 2 lines */
+  -webkit-box-orient: vertical; /* Sets vertical orientation for text layout */
+  line-height: 1.5; /* Add line-height for better readability */
+  max-width: 100%; /* Ensures the content fits within parent container */
+}
+
+.PropertiesCardPrice
+{
+  display: none;
+}
+.PropertiesCardButtonDiv
+{
+  display: none;
+}
+.PropertiesCardButton
+{
+  display: none;
+}
+.TestimonialMobileParentDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100dvw;
+  background-color: #fff;
+  margin-top: 10dvh; 
+}
+.TestimonialMobileTitle
+{
+  font-size: 2rem;
+  font-weight: 400;
+  color: #232323;
+  width: 90dvw;
+  display: flex;
+  align-self: center;
+  justify-content: start;
+}
+.TestimonialMobilePropertiesList
+{
+  height: 184px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90dvw;
+  margin-left: 10dvw;
+  overflow-y: hidden; /* Hides vertical scrollbar */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  -webkit-overflow-scrolling: touch; /* Improves scrolling on touch devices */
+}
+.TestimonialCard
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  height: 160px;
+  background-color: #fff;
+  margin-top: 0%;
+  margin-right:  6%;
+}
+.TestimonialCardImageDiv img
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+.TestimonialCardNameDiv
+{
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #232323;
+  margin-top: 32px;
+}
+  .TestimonialCardJobDiv
+  {
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: #AEADA9;
+  }
+  .TestimonialCardReviewDiv
+    {
+      font-size: 0.5rem; /* Small, readable font size */
+    font-weight: 400; /* Normal font weight */
+    color: #AEADA9; /* Subtle color for the text */
+    margin-top: 2%; /* Top margin as percentage */
+    height: 28px; /* Fixed height to ensure consistent layout */
+    overflow: hidden; /* Ensures overflow text is hidden */
+    text-overflow: ellipsis; /* Adds ellipsis for truncated text */
+    display: -webkit-box; /* Enables flex container for WebKit browsers */
+    -webkit-line-clamp: 2; /* Limits text to 2 lines */
+    -webkit-box-orient: vertical; /* Sets vertical orientation for text layout */
+    line-height: 2.5; /* Add line-height for better readability */
+    max-width: 100%; /* Ensures the content fits within parent container */
+    }
+  .TestimonialCardStars
+  {
+    color: #232323;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+    width: 80%;
+  }
+  .FooterParentDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100dvw;
+  background-color: #fff;
+  margin-top: 3vh;
+  height: 20dvh;
+}
+  .FooterHeading
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90dvw;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #232323;
+    margin-top: 5%;
+  }
+  .FooterHeading span
+{
+  width: 90dvw;
+  font-family:"Schibsted Grotesk", serif;
+  font-size: .8rem;
+  font-weight: 700;
+  color: #232323;
+  margin-top: 5%;
+}
+.FooterBottom
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100dvw;
+  background-color: #fff;
+}
+.FooterBottom div img
+{
+  width: 121px;
+}
+.FooterBottomText
+{
+  display:flex ;
+  width: 38%;
+  justify-content: space-between;
+}
+.FooterBottomTextDiv
+{
+  margin-left: 6%;
+}
+.FooterBottomTextTitle
+{
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #232323;
+  margin-top: 5%;
+}
+.FooterBottomTextPages
+{
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #AEADA9;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1200px) {
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    width: 80dvw; /* Increased the width */
+    margin-bottom: 6%;
+  }
+  
+  .projectsParentDiv
+{
+  height: 80dvh;
+
+  margin-top: 2vh; 
+
+}
+  
+}
