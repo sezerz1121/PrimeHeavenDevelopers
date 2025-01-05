@@ -21,13 +21,10 @@ const PropetiesCard = (props) => {
                 animate={loading ? { scale: 1 } : {}} // Only animate scale when loading is true
                 transition={{ duration: 0.3 }} // Smooth transition for scaling
             >
-            
                 {loading ? 
-                    <img src={props.image} alt="Property" /> : 
-                    <img src='../Images/Frame 148.png' alt="Placeholder" />
-                    
+                    <img src={props.image} alt="Property image" /> : 
+                    <img src='../Images/Frame 148.png' alt="Placeholder image" />
                 }
-                
             </motion.div>
             
             <motion.div 

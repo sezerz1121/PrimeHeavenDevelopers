@@ -13,7 +13,7 @@ const AllPropertyCard = (props) => {
 
   return (
     <div className="property-card" onClick={handleClick}>
-      <img src={props.imageUrl} className="property-card-image" alt="Property" />
+      <img src={props.imageUrl} className="property-card-image" alt={props.title} />
       <div className="property-card-content">
         <h2 className="property-card-title">{props.title}</h2>
         <p className="property-card-description">{props.description}</p>

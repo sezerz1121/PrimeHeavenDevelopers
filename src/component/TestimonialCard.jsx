@@ -20,7 +20,7 @@ const TestimonialCard = (props) => {
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.3 }}
             >
-                <img src={image} alt="Testimonial" />
+                <img src={image} alt={name} />
             </motion.div>
 
             {/* Name Animation */}
