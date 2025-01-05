@@ -50,10 +50,7 @@ const SearchArea = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Search Properties - Prime Heaven Developers</title>
-        <meta name="description" content="Search for properties in your desired city, locality, or project with Prime Heaven Developers." />
-      </Helmet>
+      
       <div className='SearchAreaParentDiv' id='home'>
         <div className='SearchButon'><MdSearch className='searchIconMob' alt="Search Icon" />Search</div>
         <div className="search-bar">

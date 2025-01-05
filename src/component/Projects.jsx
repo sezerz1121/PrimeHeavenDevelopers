@@ -8,12 +8,15 @@ import { Helmet } from "react-helmet";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+gsap.registerPlugin(ScrollTrigger);
+
 const Projects = () => {
   const projectsRef = useRef(null);
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
-  
-  const HandleAllPeojects = () => {
+  const navigate =useNavigate();
+  const HandleAllPeojects =()=>
+  {
     navigate("/allprojects");
   }
 
@@ -41,38 +44,35 @@ const Projects = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Projects - Prime Heaven Developers</title>
-        <meta name="description" content="Explore our latest projects at Prime Heaven Developers." />
-      </Helmet>
-      <div
-        ref={projectsRef}
-        className='projectsParentDiv'
-        id='projects'
-      >
-        <div className='projectsTitleDiv'>
-          <div className='projectsTitle'>Projects</div>
-          <div className='projectsAll' onClick={HandleAllPeojects}>All projects</div>
-        </div>
-        <div className='projectspPropertyParentDiv'>
-          <div></div>
-          <div className='PropertiesList'>
-            <PropetiesCard image={'../Images/ImageofPropertyOne.png'} loading={loading} />
-            <PropetiesCard image={'../Images/wendy-liga-aSlIN-fhKKU-unsplash 1.png'} loading={loading} />
-            <PropetiesCard image={'../Images/yohan-marion-bLrOryDe8V0-unsplash 1.png'} loading={loading} />
-          </div>
-          <div></div>
-        </div>
+    <div
+      ref={projectsRef}
+      className='projectsParentDiv'
+      id='projects'
+    >
+      <div className='projectsTitleDiv'>
+        <div className='projectsTitle'>Projects</div>
+        <div className='projectsAll' onClick={HandleAllPeojects}>All projects</div>
       </div>
-      <div className='projectsMobileDiv'>
-        <div className='projectsMobileTitle'>Projects</div>
-        <div className='projectsMobilePropertyList'>
-          <PropetiesCard image={'../Images/ImageofPropertyOne.png'} loading={true} />
+      <div className='projectspPropertyParentDiv'>
+        <div></div>
+        <div className='PropertiesList'>
+          <PropetiesCard image={'../Images/ImageofPropertyOne.png'} loading={loading} />
+          <PropetiesCard image={'../Images/wendy-liga-aSlIN-fhKKU-unsplash 1.png'} loading={loading} />
+          <PropetiesCard image={'../Images/yohan-marion-bLrOryDe8V0-unsplash 1.png'} loading={loading} />
+        </div>
+        <div></div>
+      </div>
+      
+    </div>
+    <div className='projectsMobileDiv'>
+      <div className='projectsMobileTitle'>Projects</div>
+      <div className='projectsMobilePropertyList'>
+        <PropetiesCard image={'../Images/ImageofPropertyOne.png'} loading={true} />
           <PropetiesCard image={'../Images/wendy-liga-aSlIN-fhKKU-unsplash 1.png'} loading={true} />
           <PropetiesCard image={'../Images/yohan-marion-bLrOryDe8V0-unsplash 1.png'} loading={true} />
-        </div>
       </div>
-    </>
+    </div>
+   </>
   );
 };
 

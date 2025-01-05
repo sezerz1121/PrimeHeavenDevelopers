@@ -26,10 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Prime Heaven Developers - Your Trusted Development Partner</title>
-        <meta name="description" content="Prime Heaven Developers offers top-notch development services for your projects. Contact us to learn more about our services and testimonials." />
-      </Helmet>
+ 
       <div className='NavbarParentDiv'>
         <div className='NavbarInnerDiv'>
           <div className='NavbarLogoDiv' onClick={redirectToHome}>
