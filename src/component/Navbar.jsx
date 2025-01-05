@@ -10,7 +10,6 @@ const Navbar = () => {
 
   const redirectToHome = () => {
     navigate("/");
-    
   };
 
   const redirectToProjects = () => {

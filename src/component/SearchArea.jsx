@@ -1,11 +1,10 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import Select from 'react-select';
-import { RxDividerVertical } from "react-icons/rx";
 import { MdSearch } from "react-icons/md";
-
+import { Helmet } from "react-helmet";
 
 const SearchArea = () => {
-     // State Management
+  // State Management
   const [city, setCity] = useState('');
   const [propertyType, setPropertyType] = useState('Flat');
   const [budget, setBudget] = useState('70 Lacs');
@@ -35,58 +34,61 @@ const SearchArea = () => {
 
   const customStyles = {
     control: (base) => ({
-        ...base,
-        border: 'none',
-        boxShadow: 'none',
-        backgroundColor: 'transparent', // Optional: For a cleaner look
+      ...base,
+      border: 'none',
+      boxShadow: 'none',
+      backgroundColor: 'transparent', // Optional: For a cleaner look
     }),
     dropdownIndicator: (base) => ({
-        ...base,
-        color: '#000', // Optional: Customize dropdown indicator color
+      ...base,
+      color: '#000', // Optional: Customize dropdown indicator color
     }),
     indicatorSeparator: () => ({
-        display: 'none', // Removes the separator between dropdown and input
+      display: 'none', // Removes the separator between dropdown and input
     }),
-};
+  };
 
   return (
     <>
-    <div className='SearchAreaParentDiv' id='home'>
-        <div className='SearchButon'><MdSearch className='searchIconMob'/>Search</div>
-            <div className="search-bar">
-        <input
+      <Helmet>
+        <title>Search Properties - Prime Heaven Developers</title>
+        <meta name="description" content="Search for properties in your desired city, locality, or project with Prime Heaven Developers." />
+      </Helmet>
+      <div className='SearchAreaParentDiv' id='home'>
+        <div className='SearchButon'><MdSearch className='searchIconMob' alt="Search Icon" />Search</div>
+        <div className="search-bar">
+          <input
             type="text"
             placeholder={"Enter City, Locality, Project"}
             value={city}
             onChange={(e) => setCity(e.target.value)}
             className="search-input"
-        />
-        <div className='bar'></div>
+          />
+          <div className='bar'></div>
 
-        <Select
+          <Select
             options={propertyOptions}
             defaultValue={{ value: 'Flat', label: 'Flat' }}
             onChange={(option) => setPropertyType(option.value)}
             className="dropdown"
             styles={customStyles}
-            
-        />
-        <div className='bar'></div>
-        <Select
+          />
+          <div className='bar'></div>
+          <Select
             options={budgetOptions}
             defaultValue={{ value: '70 Lacs', label: 'Upto 70 Lacs' }}
             onChange={(option) => setBudget(option.value)}
             className="dropdown"
             styles={customStyles}
-        />
+          />
 
-        <button onClick={handleSearch} className="search-button">
+          <button onClick={handleSearch} className="search-button">
             Search
-        </button>
+          </button>
         </div>
-    </div>
-   </>
-  )
+      </div>
+    </>
+  );
 }
 
-export default SearchArea
+export default SearchArea;
