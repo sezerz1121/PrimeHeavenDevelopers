@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-scroll';
+
 const Footer = () => {
   return (
     <div className='FooterParentDiv'>
         <div className='FooterHeading'><div>Let’s Plan Your Dream Home—<span className='FooterHeadingPart2'>Get in Touch Today!</span></div></div>
         <div className='FooterBottom'>
-            <div><img src='./Images/LOGOPRIMEHEAVEN.png'/></div>
+            <div><img src='./Images/LOGOPRIMEHEAVEN.png' alt='Prime Heaven Developers Logo'/></div>
             <div className='FooterBottomText'>
                  <div className='FooterBottomTextDiv' >
                     <div className='FooterBottomTextTitle'>Pages</div>
@@ -19,8 +20,6 @@ const Footer = () => {
                     <div className='FooterBottomTextPages'>FAQ</div>
                     <div className='FooterBottomTextPages'>Help Center</div>
                  </div>
-                 
-                 
             </div>
         </div>
     </div>
